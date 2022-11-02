@@ -37,16 +37,14 @@ public class HomeAct {
 
 	@RequestMapping("/")
 	public String home(Model model, InternCookie cookie, HttpServletRequest request){
-		if(StringUtils.isNotEmpty(cookie.getUserId())){
-			log.error("cookie check==>{}//{}//{}", cookie.getUserId(), cookie.getName(), cookie.getEmpNo());
-		}
+
 		model.addAttribute("data", commonCodeComponent.getCodeList("style_f"));
 		model.addAttribute("data2", commonCodeComponent.getCodeList("character_f"));
 
 		Map<String, CodeObject> data = commonCodeComponent.getAll();
-
 		log.error("***************************************");
 		List<TestVO> list = test.sqlMenu2("");
+		log.error("list===>{}", data);
 		for(TestVO dt : list){
 			log.error("{}//{}", dt.getUserId(), dt.getUserName());
 		}

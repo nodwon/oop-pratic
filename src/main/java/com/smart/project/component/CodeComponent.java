@@ -25,6 +25,7 @@ abstract class CodeComponent {
 	public void init() {
 		String jsonFileName = jsonPath();
 		List<CodeObject> codeObjectList = getListFromJson(jsonFileName);
+
 		codeObjectList.forEach(data -> codeMap.put((data.getId()), data));
 	}
 
