@@ -59,7 +59,7 @@ public class HomeAct {
 		}
 
 		//log.error("{}",data);
-		return "index";
+		return "mango";
 	}
 
 	@RequestMapping("/cookie/add2")
