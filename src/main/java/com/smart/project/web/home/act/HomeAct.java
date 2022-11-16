@@ -38,7 +38,7 @@ public class HomeAct {
 	@RequestMapping("/")
 	public String home(Model model, InternCookie cookie, HttpServletRequest request){
 
-		model.addAttribute("data", commonCodeComponent.getCodeList("style_f"));
+	/*	model.addAttribute("data", commonCodeComponent.getCodeList("style_f"));
 		model.addAttribute("data2", commonCodeComponent.getCodeList("character_f"));
 
 		Map<String, CodeObject> data = commonCodeComponent.getAll();
@@ -56,7 +56,7 @@ public class HomeAct {
 			String key = keys.next();
 			//log.error("key==>{}, list==>{}", key, data.get(key));
 			model.addAttribute(key, data.get(key).getCodeList());
-		}
+		}*/
 
 		//log.error("{}",data);
 		return "mango";
