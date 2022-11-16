@@ -10,7 +10,7 @@ export class mango{
     }
 
     eventBind(){
-        console.log("dsfdsfdsfsdads")
+        console.log("하이루")
     }
 
 
