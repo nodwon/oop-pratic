@@ -1,10 +1,9 @@
 "use strict";
-
 $(()=>{
-    new mango();
+    new Mango();
 })
 
-export class mango{
+export class Mango{
     constructor() {
         this.eventBind();
     }
